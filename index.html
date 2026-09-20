@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лох</title>
+    <style>
+        /* Убираем стандартные отступы браузера */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Прячет прокрутку, если она появится */
+            background-color: #111; /* Цвет фона (по желанию) */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Контейнер на весь экран */
+        .fullscreen-container {
+            display: flex;
+            justify-content: center; /* Центрируем текст по горизонтали */
+            align-items: center;     /* Центрируем текст по вертикали */
+            width: 100vw;            /* 100% ширины видимой области */
+            height: 100vh;           /* 100% высоты видимой области */
+        }
+
+        /* Стили для самой надписи */
+        .fullscreen-text {
+            color: white;
+            text-align: center;
+            text-transform: uppercase; /* Делает все буквы заглавными (по желанию) */
+            font-weight: bold;
+            
+            /* Адаптивный размер шрифта: подстраивается под ширину экрана */
+            font-size: 10vw; 
+            
+            /* Ограничиваем минимальный и максимальный размер, чтобы текст не ломался */
+            font-size: clamp(2rem, 10vw, 8rem); 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="fullscreen-container">
+        <h1 class="fullscreen-text">ТЫ ПОЛНЫЙ ЛОХ</h1>
+    </div>
+
+</body>
+</html>
